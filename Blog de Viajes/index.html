@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog de Viajes</title>
+    <script src="https://kit.fontawesome.com/2be580f7d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -14,12 +15,20 @@
     </header>
 
     <div class="barra">
-        <nav class="navegacion-principal contenedor">
+        <a href="#nav" class="desplegable">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
+
+            <a href="#" class="cerrar">
+                <i class="fas fa-times"></i>
+            </a>
+
         </nav>
     </div>
     <div class="contenedor clearfix">
@@ -70,7 +79,27 @@
             </section>
 
         </aside>
-    </div>
-    <p>hola</p>
+    </div><!--.contenedor-->
+    <footer class="footer-sitio">
+        <div class="contenedor clearfix">
+            <section class="nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quae 
+                    similique nisi minus optio alias maxime labore aspernatur quia? 
+                    Sequi, velit voluptatum? Incidunt rem iusto fuga expedita cum aliquam consequuntur?</p>
+            </section>
+            <section class="menu">
+                <h2>Menú de Navegación</h2>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Tienda</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </section>
+        </div>
+        <p class="copyright">BlogdeViajes - Todos los derechos reservados 2020 &copy;</p>
+    </footer>
 </body>
 </html>
